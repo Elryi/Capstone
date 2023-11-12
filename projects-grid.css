@@ -1,0 +1,132 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Background image below */
+body {
+    background-image: url("img/Mountain.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    margin: 8%;
+}
+
+/* Background image above*/
+
+/* Nav bars */
+
+.navbar-top {
+    background-color: aqua;
+    border: 3px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.navbar-top ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-bottom {
+    /* Fixed bottom bar testing */
+    background-color: aqua;
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    width: 84%;
+}
+
+.navbar-bottom ul {
+    list-style: none;
+    display: flex;
+}
+
+.rightnav a {
+    padding-right: 20px;
+    padding-left: px;
+}
+
+.leftnav a {
+    padding-right: 5px;
+}
+
+/* Nav bars*/
+
+
+
+
+
+
+
+
+.main-container {
+    background-color: azure;
+
+    border: 1px solid black;
+    margin-top: 5px;
+    display: flex;
+    ;
+}
+
+h1 {}
+
+
+
+/* Snowboard image section */
+.grid-style {
+
+
+}
+
+.image-placeholder {
+    margin: 5px;
+    
+    width: 200px;
+    height: 200px;
+    border: solid 2px green;
+    
+
+}
+
+/* Snowboard image section */
+
+
+
+
+/*                    Removed underlines and li dots     */
+
+a { 
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+ #linked { /* Image stuff */
+    height: 50px;
+    width: 50px;
+    border-radius: 10%;
+}
+
+#youtube {
+    height: 50px;
+    width: 70px;
+    border-radius: 9%;
+}
+
+#instagram {
+    height: 50px;
+    width: 52px;
+}

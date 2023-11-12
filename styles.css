@@ -1,108 +1,140 @@
 html {
     box-sizing: border-box;
-  }
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
+}
 
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Background image below */
 body {
     background-image: url("img/Mountain.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 50%;
+    margin: 8%;
 }
+
+/* Background image above*/
+
+/* Nav bars */
+
+.navbar-top {
+    background-color: aqua;
+    border: 3px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.navbar-top ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-bottom {
+    /* Fixed bottom bar testing */
+    background-color: aqua;
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    width: 84%;
+}
+
+.navbar-bottom ul {
+    list-style: none;
+    display: flex;
+}
+
+.rightnav a {
+    padding-right: 20px;
+    padding-left: px;
+}
+
+.leftnav a {
+    padding-right: 5px;
+}
+
+/* Nav bars*/
+
+
+
+
+
+
+
 
 .main-container {
+    background-color: azure;
+
+    border: 1px solid black;
+    margin-top: 5px;
     display: flex;
-    
+    ;
 }
 
-.green {
-    background-color: green;
-    width: 100px;
-    height: 100px;
-}
+h1 {}
 
-.blue {
-    background-color: blue;
-    width: 100px;
-    height: 100px;
-    margin-right: 400px;
-    margin-left: 10px;
-}
 
-.red {
-    background-color: red;
-    width: 100px;
-    height: 100px;
-}
 
-.yellow {
-    background-color: yellow;
-    width: 100px;
-    height: 100px;
-    margin-left: 10px;
-}
-
-.navbar {
-    background-color: aqua;
-    padding: 50 50 50 50;
+/* Snowboard image section */
+.image-placeholder-container {
+    border: solid 3px purple; /* to help me understand the box */
+    margin-top: 5px;
+    display: flex;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: ;
+    align-content: ;
+
+}
+
+.image-placeholder {
+    margin: 5px;
     
-    } 
+    width: 200px;
+    height: 200px;
+    border: solid 2px green;
+    
 
-li {
-    padding: 5%;
-}    
-
-ul {
-    display: flex;
-    ;
 }
 
-.rightnav {
-    margin-left: 30%;
-    display: flex;
-
-    ;
-}
-
-.leftnav {
-    margin-right: 30%;
-}
-
-
-
-
+/* Snowboard image section */
 
 
 
 
 /*                    Removed underlines and li dots     */
 
-a {
+a { 
     text-decoration: none;
-    
 }
 
 ul {
-    list-style: none;  
+    list-style: none;
+}
 
 
-/*                    Image stuff                    */
-
-#linked {
-    height: 40px;
-    width: 40px;
+ #linked { /* Image stuff */
+    height: 50px;
+    width: 50px;
+    border-radius: 10%;
 }
 
 #youtube {
-    height: 40px;
-    width: 60px;
+    height: 50px;
+    width: 70px;
+    border-radius: 9%;
 }
 
+#instagram {
+    height: 50px;
+    width: 52px;
+}
