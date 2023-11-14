@@ -10,10 +10,6 @@ html {
 
 /* Background image below */
 body {
-    background-image: url("img/Mountain.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 50% 50%;
     margin: 8%;
 }
 
@@ -57,48 +53,43 @@ body {
 }
 
 .leftnav a {
-    padding-right: 5px;
+    padding-right: 10px;
+    font-size: 27px;
+    
+}
+
+.navbar-top .leftnav {
+    margin-top: 25px;
+}
+
+.navbar-bottom .leftnav {
+    margin-top: 25px;
 }
 
 /* Nav bars*/
 
 
-
-
-
-
-
-
-.main-container {
-    background-color: azure;
-
-    border: 1px solid black;
-    margin-top: 5px;
-    display: flex;
-    ;
-}
-
-h1 {}
-
-
-
-/* Snowboard image section */
+/* Projects image section */
 .grid-style {
-
-
+    
+    display: grid;
+    gap: 0.1rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-row; ////
+    grid
 }
 
-.image-placeholder {
-    margin: 5px;
+.grid-image-placeholder {
+    margin: 3px;
     
     width: 200px;
     height: 200px;
-    border: solid 2px green;
+    border: solid 2px black;
     
 
 }
 
-/* Snowboard image section */
+
 
 
 

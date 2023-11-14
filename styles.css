@@ -53,12 +53,26 @@ body {
 
 .rightnav a {
     padding-right: 20px;
-    padding-left: px;
 }
 
 .leftnav a {
-    padding-right: 5px;
+    padding-right: 10px;
+    font-size: 27px;
+    
+    
 }
+
+.navbar-top .leftnav {
+    margin-top: 25px;
+}
+
+.navbar-bottom .leftnav {
+    margin-top: 25px;
+}
+
+
+
+
 
 /* Nav bars*/
 
@@ -71,20 +85,22 @@ body {
 
 .main-container {
     background-color: azure;
-
     border: 1px solid black;
     margin-top: 5px;
     display: flex;
-    ;
+    align-items: stretch;
 }
 
-h1 {}
+.main-container h1 {
+    text-align: center;
+    ;
+}
 
 
 
 /* Snowboard image section */
 .image-placeholder-container {
-    border: solid 3px purple; /* to help me understand the box */
+    border: solid 3px black; /* to help me understand the box */
     margin-top: 5px;
     display: flex;
     display: flex;
@@ -101,7 +117,7 @@ h1 {}
     
     width: 200px;
     height: 200px;
-    border: solid 2px green;
+    border: solid 2px black;
     
 
 }
