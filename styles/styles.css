@@ -10,90 +10,60 @@ html {
 
 /* Background image below */
 body {
-    background-image: url("img/Mountain.jpg");
+    background-image: url("/img/Mountain.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 50%;
-    margin: 8%;
+    margin: 10%;
 }
 
-/* Background image above*/
 
 /* Nav bars */
-
-.navbar-top {
-    background-color: aqua;
+.navbar-top, .navbar-bottom {
+    background-color: white;
     border: 3px solid black;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    ;
 }
 
-.navbar-top ul {
-    list-style: none;
+.navbar-top ul, .navbar-bottom ul {
     display: flex;
+    align-self: center;
+    padding-left: .5rem;
+    ;
 }
 
-.navbar-bottom {
-    /* Fixed bottom bar testing */
-    background-color: aqua;
-    border: 3px solid black;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 0;
-    width: 84%;
+.navbar-top li, .navbar-bottom li {
+    padding: 0 .5rem 0 .2rem;
 }
 
-.navbar-bottom ul {
-    list-style: none;
-    display: flex;
-}
-
-.rightnav a {
-    padding-right: 20px;
-}
-
-.leftnav a {
-    padding-right: 10px;
-    font-size: 27px;
-    
-    
-}
-
-.navbar-top .leftnav {
-    margin-top: 25px;
-}
-
-.navbar-bottom .leftnav {
-    margin-top: 25px;
+.navbar-top a, .navbar-bottom a {
+    color: black;
 }
 
 
 
 
 
-/* Nav bars*/
-
-
-
-
-
-
-
-
+/* Main testing */
 .main-container {
     background-color: azure;
-    border: 1px solid black;
-    margin-top: 5px;
+    border: 3px solid black;
+    margin: 1rem 0 1rem;
     display: flex;
-    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .main-container h1 {
-    text-align: center;
     ;
+}
+
+.main-container p {
+    padding: 1rem;
+    flex-wrap: wrap;
 }
 
 
@@ -122,13 +92,7 @@ body {
 
 }
 
-/* Snowboard image section */
-
-
-
-
-/*                    Removed underlines and li dots     */
-
+/*Removed underlines and li dots     */
 a { 
     text-decoration: none;
 }
@@ -136,6 +100,8 @@ a {
 ul {
     list-style: none;
 }
+
+
 
 
  #linked { /* Image stuff */
@@ -154,3 +120,6 @@ ul {
     height: 50px;
     width: 52px;
 }
+
+
+/* Media Q */
