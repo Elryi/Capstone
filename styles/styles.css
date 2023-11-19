@@ -15,6 +15,7 @@ body {
     background-attachment: fixed;
     background-position: 50% 50%;
     margin: 10%;
+    overflow: hidden;
 }
 
 
@@ -22,26 +23,44 @@ body {
 .navbar-top, .navbar-bottom {
     background-color: white;
     border: 3px solid black;
+    border-radius: .3rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    ;
+    ;*/
 }
 
 .navbar-top ul, .navbar-bottom ul {
     display: flex;
     align-self: center;
     padding-left: .5rem;
-    ;
+    flex-wrap: wrap;
 }
 
 .navbar-top li, .navbar-bottom li {
     padding: 0 .5rem 0 .2rem;
-}
-
-.navbar-top a, .navbar-bottom a {
     color: black;
 }
+
+.leftnav li a { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    border: solid 1.5px black;
+    border-radius: .3rem;
+    padding: 0 1rem;
+    
+    
+    
+}
+
+a:visited { /*makes visiting link stay black*/
+    color: black;
+}
+
+a:hover {
+    background-color: azure;
+}
+
 
 
 
@@ -49,21 +68,28 @@ body {
 
 /* Main testing */
 .main-container {
-    background-color: azure;
+    background-color: white;
     border: 3px solid black;
+    border-radius: .3rem;
     margin: 1rem 0 1rem;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+
+    
+}
+
+.main-container:hover {
+    background-color: azure;
 }
 
 .main-container h1 {
-    ;
+    font-size: 3rem;
+    align-self: center;
 }
 
 .main-container p {
     padding: 1rem;
-    flex-wrap: wrap;
 }
 
 
@@ -71,25 +97,32 @@ body {
 /* Snowboard image section */
 .image-placeholder-container {
     border: solid 3px black; /* to help me understand the box */
-    margin-top: 5px;
-    display: flex;
+    border-radius: .3rem;
+    margin: 1rem 0 1rem;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: ;
-    align-content: ;
-
 }
 
-.image-placeholder {
-    margin: 5px;
-    
-    width: 200px;
-    height: 200px;
-    border: solid 2px black;
-    
 
+.image-placeholder {
+    margin: 1rem;
+    width: auto;
+    height: auto;
+    max-width: 300px;
+    max-height: 200px;
+    border: solid 2px black;
+    border-radius: .3rem;
+    transition: transform .7s;
+}
+
+.image-placeholder:hover {
+    transform: scale(3);
+}
+
+.image-placeholder-container a:hover {
+    background-color: transparent;
 }
 
 /*Removed underlines and li dots     */
