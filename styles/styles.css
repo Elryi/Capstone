@@ -1,158 +1,204 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 /* Background image below */
 body {
-    background-image: url("/img/Mountain.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 50% 50%;
-    margin: 10%;
-    overflow: hidden;
+  background-image: url("/img/Mountain.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  margin: 10%;
 }
-
 
 /* Nav bars */
-.navbar-top, .navbar-bottom {
-    background-color: white;
-    border: 3px solid black;
-    border-radius: .3rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    ;*/
+.navbar-top,
+.navbar-bottom {
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.navbar-top ul, .navbar-bottom ul {
-    display: flex;
-    align-self: center;
-    padding-left: .5rem;
-    flex-wrap: wrap;
+.navbar-top ul,
+.navbar-bottom ul {
+  display: flex;
+  align-self: center;
+  padding-left: 0.5rem;
+  flex-wrap: wrap;
 }
 
-.navbar-top li, .navbar-bottom li {
-    padding: 0 .5rem 0 .2rem;
-    color: black;
+.navbar-top li,
+.navbar-bottom li {
+  padding: 0 0.5rem 0 0.2rem;
+  color: black;
 }
 
-.leftnav li a { 
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3em;
-    border: solid 1.5px black;
-    border-radius: .3rem;
-    padding: 0 1rem;
-    
-    
-    
+.leftnav li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  border: solid 1.5px black;
+  border-radius: 0.3rem;
+  padding: 0 1rem;
 }
 
-a:visited { /*makes visiting link stay black*/
-    color: black;
+a:visited {
+  /*makes visiting link stay black*/
+  color: black;
 }
 
 a:hover {
-    background-color: azure;
+  background: linear-gradient(
+    90deg,
+    rgb(199, 250, 250) 75%,
+    white,
+    rgb(199, 250, 250)
+  );
 }
-
-
-
-
-
 
 /* Main testing */
 .main-container {
-    background-color: white;
-    border: 3px solid black;
-    border-radius: .3rem;
-    margin: 1rem 0 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
-
-    
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 0.3rem;
+  margin: 1rem 0 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
 .main-container:hover {
-    background-color: azure;
+  background: linear-gradient(
+    90deg,
+    rgb(199, 250, 250) 75%,
+    white,
+    rgb(199, 250, 250)
+  );
 }
 
 .main-container h1 {
-    font-size: 3rem;
-    align-self: center;
+  font-size: 3rem;
 }
 
 .main-container p {
-    padding: 1rem;
+  padding: 1rem;
 }
-
-
 
 /* Snowboard image section */
 .image-placeholder-container {
-    border: solid 3px black; /* to help me understand the box */
-    border-radius: .3rem;
-    margin: 1rem 0 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  border: solid 3px black;
+  border-radius: 0.3rem;
+  margin: 1rem 0 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-
 .image-placeholder {
-    margin: 1rem;
-    width: auto;
-    height: auto;
-    max-width: 300px;
-    max-height: 200px;
-    border: solid 2px black;
-    border-radius: .3rem;
-    transition: transform .7s;
+  margin: 1rem;
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  max-height: 200px;
+  border: solid 2px black;
+  border-radius: 0.3rem;
+  transition: transform 0.7s;
 }
 
 .image-placeholder:hover {
-    transform: scale(3);
+  border: solid 1px black;
+  transform: scale(3);
 }
 
 .image-placeholder-container a:hover {
-    background-color: transparent;
+  background-color: transparent;
+  /*not working anymore?*/
 }
 
 /*Removed underlines and li dots     */
-a { 
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
-
-
-
- #linked { /* Image stuff */
-    height: 50px;
-    width: 50px;
-    border-radius: 10%;
+#linked {
+  /* Image nav links stuff */
+  height: 50px;
+  width: 50px;
+  border-radius: 10%;
 }
 
 #youtube {
-    height: 50px;
-    width: 70px;
-    border-radius: 9%;
+  height: 50px;
+  width: 70px;
+  border-radius: 9%;
 }
 
 #instagram {
-    height: 50px;
-    width: 52px;
+  height: 50px;
+  width: 52px;
 }
 
-
 /* Media Q */
+
+@media all and (max-width: 820px) {
+  .navbar-top {
+    flex-direction: column;
+  }
+
+  .navbar-top li {
+  }
+
+  ul > li {
+    border: solid 1px green;
+  }
+
+  .rightnav li {
+    padding: 0 30px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  ul > li {
+    border: solid 1.5px blue;
+  }
+
+  .rightnav li {
+    padding: 0 20px;
+  }
+}
+
+@media all and (max-width: 529px) {
+  .navbar-top ul {
+    flex-direction: column;
+  }
+
+  .leftnav li {
+    padding: 5px 0;
+  }
+
+  ul > li {
+    border: solid 1.5px pink;
+    /*helps with understanding*/
+    text-align: center;
+  }
+
+  .rightnav li {
+    padding: 0 40px;
+  }
+
+  .rightnav {
+    margin-top: 0;
+  }
+}
