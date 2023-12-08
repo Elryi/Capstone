@@ -26,15 +26,25 @@
 
 <main class="main-container">
     <div class="main-frame">
-        <img id="gate" src="/pointAndClickImg/Gate.jpg" alt="" onclick="changeThis">
-        
-
-    
+        <img id="gate" src="/pointAndClickImg/Gate.jpg" usemap="#image_map" onclick="changeThis()">
+                <!--map commented out so the function will work   
+            <map name="image_map">
+                <area id="entrance" alt="gate" title="gate" href="/pointAndClickImg/Entrance.jpg" 
+                coords="42,16,614,752" shape="rect">
+            </map>
+        -->
+        <img id="entrance" src="/pointAndClickImg/Entrance.jpg" onclick="">
+        <img id="main-hall" src="/pointAndClickImg/Main Hall.jpg" onclick="">
+        <img id="dungeon" src="/pointAndClickImg/Dungeon.jpg" onclick="">
+        <img id="potions-room" src="/pointAndClickImg/Potions Room.jpg" onclick="">
+        <img id="library" src="/pointAndClickImg/Library.jpg" onclick="">
+        <img id="spell-tome" src="/pointAndClickImg/Spell tome.jpg" onclick="">
     </div>
     <div class="button-list">
         <button>Inspect</button>
         <button>Open</button>
         <button>Hit</button>
+        <button>Back</button>
     </div>
     <div class="game-text">Messages displayed here</div>
 </main>
