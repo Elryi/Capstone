@@ -1,216 +1,95 @@
-html {
-  box-sizing: border-box;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
-
-
-/* Background image below */
 body {
-  background-image: url("/img/Mountain.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
-  margin: 10%;
+	line-height: 1;
 }
-
-
-
-
-
-/* Nav bars */
-.navbar-top {
-  background-color: white;
-  border: 3px solid black;
-  border-radius: 0.3rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+ol, ul {
+	list-style: none;
 }
-
-.navbar-top ul {
-  display: flex;
-  align-self: center;
-  padding-left: 0.5rem;
-  flex-wrap: wrap;
+blockquote, q {
+	quotes: none;
 }
-
-.navbar-top li {
-  padding: 0 0.5rem 0 0.2rem;
-  color: black;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
-
-.leftnav li a {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.3em;
-  border: solid 1.9px black;
-  border-radius: 0.3rem;
-  padding: 0 1rem;
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
+/* styles reset not working the way I had thought */
 
-a:visited { /*makes visiting link stay black*/
-  color: black;
+body {
+  
 }
-
-.leftnav a:hover {
-  background-color: azure;
-}
-
-
-
-
-
-
 
 /* Main Game Styles point and click */
 .main-container {
-  border: 3px solid white;
-  background-color: grey;
-  border-radius: 0.3rem;
-  margin: 1rem 0 1rem;
+  overflow: hidden;; /*overflow: hidden; on this container makes canvas inline with messages*/
+  
 }
 
-.main-frame {
-  border: 2px solid red;
-}
-
-div.main-frame img {
-  height: 60%;
-  width: 100%;
+#game-container {
+  
 }
 
 .button-list {
-  border: 2px solid hotpink;
+  border: 4px solid greenyellow;
   height: 25px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
+  width: auto;
+  height: auto;
+  
 }
 
 button {
   flex-grow: 1;
 }
 
-.game-text {
-  border: 2px solid blue;
-  height: 140px;
-}
-/*game images*/
-#main-hall, 
-#entrance,
-#dungeon,
-#potions-room,
-#spell-tome,
-#library {
-  display: none; /*images hidden for game*/
+#room-message {
+  border: 4px solid blue;
+  border-radius: 3px;
+  height: 200px;
+  
 }
 
+/* #inventory-container {
+	border: 4px solid blue;
+	border-radius: 3px;
+	height: 200px;
+	display: none;
+  } */
 
-
-
-
-
-
-
-
- /*Icons for nav top right*/
-a {  /*Icons for nav top right*/
-  text-decoration: none;
+canvas {
+  border: 4px solid pink;
+  height: auto;	
+  width: auto;
 }
 
-ul {
-  list-style: none;
-}
-
-#linked { 
-  height: 50px;
-  width: 50px;
-  border-radius: 10%;
-}
-
-#youtube {
-  height: 50px;
-  width: 70px;
-  border-radius: 9%;
-}
-
-#instagram {
-  height: 50px;
-  width: 52px;
-}
-
-
-
-
-
-
-
-
-/* Media Q */
-/* Media Q */
-@media all and (max-width: 820px) {
-  .navbar-top {
-    flex-direction: column;
-  }
-
-  .navbar-top li {
-  }
-
-  .rightnav li {
-    padding: 0 40px;
-  }
-}
-
-@media all and (max-width: 600px) {
-  ul > li {
-  }
-
-  .rightnav li {
-  }
-}
-
-@media all and (max-width: 532px) {
-  .navbar-top ul {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .leftnav li {
-    padding: 5px 9px 5px 0px;
-  }
-
-  body > header > nav > ul.leftnav > li {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .rightnav {
-    margin-top: 0;
-  }
-
-  body > header > nav > ul.rightnav > li {
-    max-width: 55px;
-  }
-
-  body > header > nav > ul.rightnav > li > a {
-  }
-
-  body > header > nav > ul.rightnav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-    padding-right: 65px;
-  }
-
-  body > header > nav > ul.rightnav > li:nth-child(2) {
-    padding-left: 20px;
-  }
-}

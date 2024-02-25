@@ -1,63 +1,35 @@
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/styles/gamestyles.css" type="text/css">
-    <script src="pointAndClickJS/pointAndClickJS.js"></script>
-</head>
- 
-<header>
-    <nav class="navbar-top">
-        <ul class="leftnav">
-            <li id="testing"><a href="#">Home</a></li>
-            <li><a href="snowboarding.html">Snowboarding</a></li>
-            <li><a href="projects.html">Projects</a></li>
-        </ul>
-        <ul class="rightnav">
-            <li><a href="linkedin.com"><img id="linked" src="/img/linkedIn.png" alt="LinkedIn"></a></li>
-            <li><a href="youtube.com"><img id="youtube" src="/img/youtube.jpg" alt="YouTube"></a></li>
-            <li><a href="instagram.com"><img id="instagram" src="/img/insta.png" alt="Instagram"></a></li>
-        </ul>
-    </nav>
-</header>
-
-
-<main class="main-container">
-    <div class="main-frame">
-        <img id="gate" src="/pointAndClickImg/Gate.jpg" usemap="#image_map" onclick="changeThis()">
-                <!--map commented out so the function will work   
-            <map name="image_map">
-                <area id="entrance" alt="gate" title="gate" href="/pointAndClickImg/Entrance.jpg" 
-                coords="42,16,614,752" shape="rect">
-            </map>
-        -->
-        <img id="entrance" src="/pointAndClickImg/Entrance.jpg" onclick="">
-        <img id="main-hall" src="/pointAndClickImg/Main Hall.jpg" onclick="">
-        <img id="dungeon" src="/pointAndClickImg/Dungeon.jpg" onclick="">
-        <img id="potions-room" src="/pointAndClickImg/Potions Room.jpg" onclick="">
-        <img id="library" src="/pointAndClickImg/Library.jpg" onclick="">
-        <img id="spell-tome" src="/pointAndClickImg/Spell tome.jpg" onclick="">
-    </div>
-    <div class="button-list">
-        <button>Inspect</button>
-        <button>Open</button>
-        <button>Hit</button>
-        <button>Back</button>
-    </div>
-    <div class="game-text">Messages displayed here</div>
-</main>
-
-
-<footer>
-    <nav class="navbar-bottom">
-
-    </nav>
-</footer>
-
-<script src="JS\script.js"></script>
-
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="/styles/gamestyles.css" type="text/css" />
+  </head>
+  <body>
+    <header></header>
+    <main class="main-container">
+      <div id="game-container">
+      <canvas id="game-canvas"></canvas>
+      
+        <div class="button-list">
+          <button id="inspect-button">Inspect</button>
+          <!-- think about these options and if it's doable in the time frame -->
+          <!-- <button id="open-button">Open</button> --> 
+          <!-- <button id="use-button">Use</button> -->
+          <!-- <button id="inventory-button">Inventory</button> -->
+          <button id="back-button">Back</button>
+        </div>
+        <div id="room-message"></div>
+        <div id="inventory-container"></div>
+      </div>
+    </main>
+    <script
+      src="pointAndClickJS/pointAndClickJS.js"
+      type="text/javascript">
+    </script>
+  </body>
 </html>
+
+
+<!-- live-server --browser=chrome -->
