@@ -1,1 +1,1 @@
-# Personal website and upcoming project.
+# Personal website and point and click adventure.
